@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2bc93d0b217240a189a653f73c67920c" Name="Diagram1">
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.BenefitCategories" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.Certificates" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.CitizenBenefits" Width="1.5" PointX="8.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.CitizenDocuments" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.Citizens" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.DocumentTypes" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.EventLog" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.Regions" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.UserRoles" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BenefitsManagementSystemModel.Users" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__Certifica__Categ__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__CitizenBe__Categ__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__Certifica__Citiz__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__Certifica__Issue__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__CitizenBe__Citiz__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__CitizenBe__Creat__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__CitizenDo__Citiz__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__CitizenDo__DocTy__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__Citizens__Region__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__EventLog__UserID__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="BenefitsManagementSystemModel.FK__Users__RoleID__29572725" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,32 @@
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\bin\Debug\Citizen Benefits Management System.exe.config
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\bin\Debug\Citizen Benefits Management System.exe
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\bin\Debug\Citizen Benefits Management System.pdb
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Assets\Styles.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\LoginWindow.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\LoginWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System_Content.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System_MarkupCompile.cache
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System_MarkupCompile.lref
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\App.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.g.resources
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen_Benefits_Management_System.Properties.Resources.resources
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen .2A661AB6.Up2Date
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.exe
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.pdb
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizensListPage.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizensListPage.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizenEditWindow.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizenEditWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizenBenefitsWindow.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\BenefitEditWindow.baml
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizenBenefitsWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\BenefitEditWindow.g.cs

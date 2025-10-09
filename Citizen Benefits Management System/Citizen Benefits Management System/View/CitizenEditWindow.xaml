@@ -1,0 +1,131 @@
+<Window x:Class="Citizen_Benefits_Management_System.View.CitizenEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Редактирование гражданина" 
+        Height="700" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{StaticResource BackgroundColor}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Border Grid.Row="0" Background="{StaticResource PrimaryColor}" Padding="20">
+            <TextBlock x:Name="TxtTitle"
+                      Text="Добавление гражданина" 
+                      FontSize="20" 
+                      FontWeight="Bold" 
+                      Foreground="White"/>
+        </Border>
+
+        <!-- Форма -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <Border Background="White" 
+                    Margin="20"
+                    Padding="30"
+                    CornerRadius="8">
+                <StackPanel>
+                    <!-- Личные данные -->
+                    <TextBlock Text="Личные данные" 
+                              Style="{StaticResource SubHeaderText}"/>
+
+                    <Label Content="Фамилия:*" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtLastName" Style="{StaticResource ModernTextBox}"/>
+
+                    <Label Content="Имя:*" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtFirstName" Style="{StaticResource ModernTextBox}"/>
+
+                    <Label Content="Отчество:" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtMiddleName" Style="{StaticResource ModernTextBox}"/>
+
+                    <Label Content="Дата рождения:*" Style="{StaticResource ModernLabel}"/>
+                    <DatePicker x:Name="DpBirthDate" 
+                               Style="{StaticResource ModernComboBox}"/>
+
+                    <!-- Контактные данные -->
+                    <TextBlock Text="Контактные данные" 
+                              Style="{StaticResource SubHeaderText}"
+                              Margin="0,20,0,10"/>
+
+                    <Label Content="СНИЛС:*" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtSNILS" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="14"
+                            TextChanged="TxtSNILS_TextChanged"/>
+                    <TextBlock x:Name="TxtSNILSHint"
+                              Text="Формат: XXX-XXX-XXX XX"
+                              FontSize="11"
+                              Foreground="{StaticResource TextSecondaryColor}"
+                              Margin="5,0,5,5"/>
+
+                    <Label Content="Телефон:" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtPhone" 
+                            Style="{StaticResource ModernTextBox}"
+                            TextChanged="TxtPhone_TextChanged"/>
+                    <TextBlock Text="Формат: +7 (XXX) XXX-XX-XX"
+                              FontSize="11"
+                              Foreground="{StaticResource TextSecondaryColor}"
+                              Margin="5,0,5,5"/>
+
+                    <Label Content="Email:" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtEmail" Style="{StaticResource ModernTextBox}"/>
+
+                    <!-- Адрес -->
+                    <TextBlock Text="Адрес проживания" 
+                              Style="{StaticResource SubHeaderText}"
+                              Margin="0,20,0,10"/>
+
+                    <Label Content="Регион:" Style="{StaticResource ModernLabel}"/>
+                    <ComboBox x:Name="CbRegion" 
+                             Style="{StaticResource ModernComboBox}"
+                             DisplayMemberPath="RegionName"
+                             SelectedValuePath="RegionID"/>
+
+                    <Label Content="Адрес:" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtAddress" 
+                            Style="{StaticResource ModernTextBox}"
+                            Height="60"
+                            TextWrapping="Wrap"
+                            AcceptsReturn="True"
+                            VerticalScrollBarVisibility="Auto"/>
+
+                    <!-- Сообщение об ошибке -->
+                    <TextBlock x:Name="TxtError" 
+                              Foreground="{StaticResource ErrorColor}"
+                              FontSize="12"
+                              Margin="5,15,5,0"
+                              TextWrapping="Wrap"
+                              Visibility="Collapsed"/>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+
+        <!-- Кнопки -->
+        <Border Grid.Row="2" 
+                Background="White" 
+                Padding="20"
+                BorderBrush="{StaticResource DividerColor}"
+                BorderThickness="0,1,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="BtnSave" 
+                       Content="Сохранить" 
+                       Style="{StaticResource PrimaryButton}"
+                       Width="120"
+                       Click="BtnSave_Click"/>
+                <Button x:Name="BtnCancel" 
+                       Content="Отмена" 
+                       Style="{StaticResource SecondaryButton}"
+                       Width="120"
+                       Click="BtnCancel_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

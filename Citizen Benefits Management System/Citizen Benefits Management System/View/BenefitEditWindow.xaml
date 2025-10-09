@@ -1,0 +1,103 @@
+<Window x:Class="Citizen_Benefits_Management_System.View.BenefitEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Редактирование льготы" 
+        Height="550" Width="550"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{StaticResource BackgroundColor}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <Border Grid.Row="0" Background="{StaticResource PrimaryColor}" Padding="20">
+            <TextBlock x:Name="TxtTitle"
+                      Text="Добавление льготы" 
+                      FontSize="20" 
+                      FontWeight="Bold" 
+                      Foreground="White"/>
+        </Border>
+
+        <!-- Форма -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <Border Background="White" 
+                    Margin="20"
+                    Padding="30"
+                    CornerRadius="8">
+                <StackPanel>
+                    <Label Content="Категория льготы:*" Style="{StaticResource ModernLabel}"/>
+                    <ComboBox x:Name="CbCategory" 
+                             Style="{StaticResource ModernComboBox}"
+                             DisplayMemberPath="CategoryName"
+                             SelectedValuePath="CategoryID"/>
+
+                    <Label Content="Дата начала:*" Style="{StaticResource ModernLabel}"/>
+                    <DatePicker x:Name="DpStartDate" 
+                               Style="{StaticResource ModernComboBox}"/>
+
+                    <Label Content="Дата окончания:" Style="{StaticResource ModernLabel}"/>
+                    <DatePicker x:Name="DpEndDate" 
+                               Style="{StaticResource ModernComboBox}"/>
+                    <TextBlock Text="Оставьте пустым для бессрочной льготы"
+                              FontSize="11"
+                              Foreground="{StaticResource TextSecondaryColor}"
+                              Margin="5,0,5,10"/>
+
+                    <Label Content="Номер льготы:" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtBenefitNumber" 
+                            Style="{StaticResource ModernTextBox}"/>
+
+                    <Label Content="Описание:" Style="{StaticResource ModernLabel}"/>
+                    <TextBox x:Name="TxtDescription" 
+                            Style="{StaticResource ModernTextBox}"
+                            Height="80"
+                            TextWrapping="Wrap"
+                            AcceptsReturn="True"
+                            VerticalScrollBarVisibility="Auto"/>
+
+                    <Label Content="Статус:*" Style="{StaticResource ModernLabel}"/>
+                    <ComboBox x:Name="CbStatus" 
+                             Style="{StaticResource ModernComboBox}">
+                        <ComboBoxItem Content="Активна" IsSelected="True"/>
+                        <ComboBoxItem Content="Неактивна"/>
+                    </ComboBox>
+
+                    <!-- Сообщение об ошибке -->
+                    <TextBlock x:Name="TxtError" 
+                              Foreground="{StaticResource ErrorColor}"
+                              FontSize="12"
+                              Margin="5,15,5,0"
+                              TextWrapping="Wrap"
+                              Visibility="Collapsed"/>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+
+        <!-- Кнопки -->
+        <Border Grid.Row="2" 
+                Background="White" 
+                Padding="20"
+                BorderBrush="{StaticResource DividerColor}"
+                BorderThickness="0,1,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="BtnSave" 
+                       Content="Сохранить" 
+                       Style="{StaticResource PrimaryButton}"
+                       Width="120"
+                       Click="BtnSave_Click"/>
+                <Button x:Name="BtnCancel" 
+                       Content="Отмена" 
+                       Style="{StaticResource SecondaryButton}"
+                       Width="120"
+                       Click="BtnCancel_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
