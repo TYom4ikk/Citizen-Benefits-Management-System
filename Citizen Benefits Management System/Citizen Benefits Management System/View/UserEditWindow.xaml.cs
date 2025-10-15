@@ -99,7 +99,7 @@ namespace Citizen_Benefits_Management_System.View
             }
 
             // Проверка уникальности логина при добавлении
-            if (!_isEditMode && _usersController.IsUsernameExists(TxtUsername.Text))
+            if (!_isEditMode && _usersController.UsernameExists(TxtUsername.Text))
             {
                 MessageBox.Show("Пользователь с таким логином уже существует",
                     "Ошибка валидации", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -213,7 +213,7 @@ namespace Citizen_Benefits_Management_System.View
                         _user.PasswordHash = PasswordHasher.HashPassword(TxtPassword.Password);
                     }
 
-                    _usersController.UpdateUser(_user);
+                    _usersController.Update(_user);
                     Username = _user.Username;
                     
                     MessageBox.Show("Пользователь успешно обновлен", "Успех",
@@ -238,10 +238,10 @@ namespace Citizen_Benefits_Management_System.View
                             ? null 
                             : TxtPhone.Text.Trim(),
                         RoleID = (int)CmbRole.SelectedValue,
-                        CreatedDate = DateTime.Now
+                        CreatedAt = DateTime.Now
                     };
 
-                    _usersController.AddUser(newUser);
+                    _usersController.Add(newUser);
                     Username = newUser.Username;
                     
                     MessageBox.Show("Пользователь успешно добавлен", "Успех",

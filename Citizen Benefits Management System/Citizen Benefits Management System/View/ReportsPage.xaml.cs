@@ -82,7 +82,7 @@ namespace Citizen_Benefits_Management_System.View
                 var allCitizens = _citizensController.GetAll();
                 TxtTotalCitizens.Text = allCitizens.Count.ToString();
 
-                var beneficiariesCount = allCitizens.Count(c => c.CitizenBenefits.Any(cb => cb.IsActive));
+                var beneficiariesCount = allCitizens.Count(c => c.CitizenBenefits.Any(cb => cb.EndDate == null || cb.EndDate > DateTime.Now));
                 TxtTotalBeneficiaries.Text = beneficiariesCount.ToString();
 
                 var allCertificates = _certificatesController.GetAllCertificates();

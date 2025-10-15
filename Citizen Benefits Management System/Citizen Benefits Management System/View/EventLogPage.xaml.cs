@@ -39,7 +39,7 @@ namespace Citizen_Benefits_Management_System.View
         /// </summary>
         private void LoadUsers()
         {
-            var users = _usersController.GetAllUsers();
+            var users = _usersController.GetAll();
             var userList = new List<UserComboItem>
             {
                 new UserComboItem { UserID = null, DisplayName = "Все пользователи" }
@@ -93,7 +93,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             try
             {
-                var events = _eventLogController.GetAllEvents();
+                var events = _eventLogController.GetAll();
                 
                 _allEvents = events.Select(e => new EventLogViewModel
                 {

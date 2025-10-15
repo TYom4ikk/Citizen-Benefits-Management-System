@@ -58,7 +58,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             try
             {
-                var users = _usersController.GetAllUsers();
+                var users = _usersController.GetAll();
                 
                 _allUsers = users.Select(u => new UserViewModel
                 {
@@ -175,7 +175,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             if (sender is Button button && button.Tag is int userId)
             {
-                var user = _usersController.GetUserById(userId);
+                var user = _usersController.GetById(userId);
                 if (user != null)
                 {
                     var editWindow = new UserEditWindow(user);
@@ -205,7 +205,7 @@ namespace Citizen_Benefits_Management_System.View
                     return;
                 }
 
-                var user = _usersController.GetUserById(userId);
+                var user = _usersController.GetById(userId);
                 if (user != null)
                 {
                     var result = MessageBox.Show(
@@ -220,7 +220,7 @@ namespace Citizen_Benefits_Management_System.View
                     {
                         try
                         {
-                            _usersController.DeleteUser(userId);
+                            _usersController.Delete(userId);
                             _eventLogController.LogEvent(SessionManager.CurrentUser.UserID,
                                 "Удаление пользователя",
                                 $"Удален пользователь: {user.Username}");

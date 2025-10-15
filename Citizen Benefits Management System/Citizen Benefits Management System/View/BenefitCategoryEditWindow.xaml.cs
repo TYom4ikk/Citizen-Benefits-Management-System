@@ -110,7 +110,7 @@ namespace Citizen_Benefits_Management_System.View
                             : TxtDescription.Text.Trim()
                     };
 
-                    _categoriesController.AddCategory(newCategory);
+                    _categoriesController.Add(newCategory);
                     CategoryName = newCategory.CategoryName;
                     
                     MessageBox.Show("Категория успешно добавлена", "Успех",

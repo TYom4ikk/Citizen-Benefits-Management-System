@@ -40,7 +40,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             try
             {
-                var categories = _categoriesController.GetAllCategories();
+                var categories = _categoriesController.GetAll();
                 
                 _allCategories = categories.Select(c => new CategoryViewModel
                 {
