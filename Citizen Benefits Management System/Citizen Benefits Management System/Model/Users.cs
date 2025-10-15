@@ -32,6 +32,7 @@ namespace Citizen_Benefits_Management_System.Model
         public Nullable<bool> IsActive { get; set; }
         public Nullable<System.DateTime> CreatedAt { get; set; }
         public Nullable<System.DateTime> LastLogin { get; set; }
+        public string Phone { get; set; }
     
         public virtual ICollection<Certificates> Certificates { get; set; }
         public virtual ICollection<CitizenBenefits> CitizenBenefits { get; set; }

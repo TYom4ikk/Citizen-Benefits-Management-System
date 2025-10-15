@@ -157,6 +157,7 @@
     <NavigationProperty Name="CitizenBenefits" Relationship="Self.FK__CitizenBe__Creat__412EB0B6" FromRole="Users" ToRole="CitizenBenefits" />
     <NavigationProperty Name="EventLog" Relationship="Self.FK__EventLog__UserID__4BAC3F29" FromRole="Users" ToRole="EventLog" />
     <NavigationProperty Name="UserRoles" Relationship="Self.FK__Users__RoleID__29572725" FromRole="Users" ToRole="UserRoles" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK__Certifica__Categ__46E78A0C">
     <End Role="BenefitCategories" Type="Self.BenefitCategories" Multiplicity="1" />

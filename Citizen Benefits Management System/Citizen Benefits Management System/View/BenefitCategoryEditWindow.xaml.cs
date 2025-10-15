@@ -93,7 +93,7 @@ namespace Citizen_Benefits_Management_System.View
                         ? null 
                         : TxtDescription.Text.Trim();
 
-                    _categoriesController.UpdateCategory(_category);
+                    _categoriesController.Update(_category);
                     CategoryName = _category.CategoryName;
                     
                     MessageBox.Show("Категория успешно обновлена", "Успех",

@@ -133,7 +133,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             if (sender is Button button && button.Tag is int categoryId)
             {
-                var category = _categoriesController.GetCategoryById(categoryId);
+                var category = _categoriesController.GetById(categoryId);
                 if (category != null)
                 {
                     var editWindow = new BenefitCategoryEditWindow(category);
@@ -155,7 +155,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             if (sender is Button button && button.Tag is int categoryId)
             {
-                var category = _categoriesController.GetCategoryById(categoryId);
+                var category = _categoriesController.GetById(categoryId);
                 if (category != null)
                 {
                     // Проверка наличия связанных льгот
@@ -179,7 +179,7 @@ namespace Citizen_Benefits_Management_System.View
                     {
                         try
                         {
-                            _categoriesController.DeleteCategory(categoryId);
+                            _categoriesController.Delete(categoryId);
                             _eventLogController.LogEvent(SessionManager.CurrentUser.UserID,
                                 "Удаление категории льгот",
                                 $"Удалена категория: {category.CategoryName}");

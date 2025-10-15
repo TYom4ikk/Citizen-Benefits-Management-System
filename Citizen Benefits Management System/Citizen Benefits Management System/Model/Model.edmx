@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище BenefitsManagementSystemModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Хранилище BenefitsManagementSystemModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BenefitCategories">
           <Key>
             <PropertyRef Name="CategoryID" />
@@ -140,6 +140,7 @@
           <Property Name="IsActive" Type="bit" />
           <Property Name="CreatedAt" Type="datetime" />
           <Property Name="LastLogin" Type="datetime" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <Association Name="FK__Certifica__Categ__46E78A0C">
           <End Role="BenefitCategories" Type="Self.BenefitCategories" Multiplicity="1" />
@@ -330,8 +331,7 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BenefitsManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -492,6 +492,7 @@
           <NavigationProperty Name="CitizenBenefits" Relationship="Self.FK__CitizenBe__Creat__412EB0B6" FromRole="Users" ToRole="CitizenBenefits" />
           <NavigationProperty Name="EventLog" Relationship="Self.FK__EventLog__UserID__4BAC3F29" FromRole="Users" ToRole="EventLog" />
           <NavigationProperty Name="UserRoles" Relationship="Self.FK__Users__RoleID__29572725" FromRole="Users" ToRole="UserRoles" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK__Certifica__Categ__46E78A0C">
           <End Role="BenefitCategories" Type="Self.BenefitCategories" Multiplicity="1" />
@@ -821,6 +822,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="BenefitsManagementSystemModel.Users">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />

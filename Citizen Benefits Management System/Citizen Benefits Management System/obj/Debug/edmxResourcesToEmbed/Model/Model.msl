@@ -134,6 +134,7 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="BenefitsManagementSystemModel.Users">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />

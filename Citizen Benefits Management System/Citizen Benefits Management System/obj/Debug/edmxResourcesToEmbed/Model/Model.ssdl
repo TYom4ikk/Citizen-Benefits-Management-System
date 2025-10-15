@@ -135,6 +135,7 @@
     <Property Name="IsActive" Type="bit" />
     <Property Name="CreatedAt" Type="datetime" />
     <Property Name="LastLogin" Type="datetime" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
   </EntityType>
   <Association Name="FK__Certifica__Categ__46E78A0C">
     <End Role="BenefitCategories" Type="Self.BenefitCategories" Multiplicity="1" />
