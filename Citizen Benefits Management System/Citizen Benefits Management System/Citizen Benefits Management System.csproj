@@ -90,6 +90,46 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\BenefitCategoriesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BenefitCategoryEditWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CertificateEditWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CertificateViewWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CertificatesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\EventLogPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ReportsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserEditWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UsersPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CitizenSelectWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,6 +137,7 @@
     <Compile Include="Classes\Controllers\BenefitCategoriesController.cs" />
     <Compile Include="Classes\Controllers\CitizenBenefitsController.cs" />
     <Compile Include="Classes\Controllers\CitizensController.cs" />
+    <Compile Include="Classes\Controllers\CertificatesController.cs" />
     <Compile Include="Classes\Controllers\EventLogController.cs" />
     <Compile Include="Classes\Controllers\RegionsController.cs" />
     <Compile Include="Classes\Controllers\UsersController.cs" />
@@ -122,6 +163,7 @@
     <Compile Include="Model\Citizens.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Core.cs" />
     <Compile Include="Model\DocumentTypes.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -169,6 +211,36 @@
     </Compile>
     <Compile Include="View\BenefitEditWindow.xaml.cs">
       <DependentUpon>BenefitEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BenefitCategoriesPage.xaml.cs">
+      <DependentUpon>BenefitCategoriesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BenefitCategoryEditWindow.xaml.cs">
+      <DependentUpon>BenefitCategoryEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CertificateEditWindow.xaml.cs">
+      <DependentUpon>CertificateEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CertificateViewWindow.xaml.cs">
+      <DependentUpon>CertificateViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CertificatesPage.xaml.cs">
+      <DependentUpon>CertificatesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EventLogPage.xaml.cs">
+      <DependentUpon>EventLogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportsPage.xaml.cs">
+      <DependentUpon>ReportsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserEditWindow.xaml.cs">
+      <DependentUpon>UserEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UsersPage.xaml.cs">
+      <DependentUpon>UsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CitizenSelectWindow.xaml.cs">
+      <DependentUpon>CitizenSelectWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

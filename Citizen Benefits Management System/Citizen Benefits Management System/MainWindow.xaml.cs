@@ -151,8 +151,9 @@ namespace Citizen_Benefits_Management_System
         /// </summary>
         private void BtnCategories_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел 'Категории льгот' находится в разработке", "Информация", 
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            PanelWelcome.Visibility = Visibility.Collapsed;
+            MainFrame.Visibility = Visibility.Visible;
+            MainFrame.Navigate(new BenefitCategoriesPage());
         }
 
         /// <summary>
@@ -160,8 +161,9 @@ namespace Citizen_Benefits_Management_System
         /// </summary>
         private void BtnCertificates_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел 'Справки' находится в разработке", "Информация", 
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            PanelWelcome.Visibility = Visibility.Collapsed;
+            MainFrame.Visibility = Visibility.Visible;
+            MainFrame.Navigate(new CertificatesPage());
         }
 
         /// <summary>
@@ -169,8 +171,9 @@ namespace Citizen_Benefits_Management_System
         /// </summary>
         private void BtnEventLog_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел 'Журнал событий' находится в разработке", "Информация", 
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            PanelWelcome.Visibility = Visibility.Collapsed;
+            MainFrame.Visibility = Visibility.Visible;
+            MainFrame.Navigate(new EventLogPage());
         }
 
         /// <summary>
@@ -178,8 +181,9 @@ namespace Citizen_Benefits_Management_System
         /// </summary>
         private void BtnReports_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел 'Отчеты' находится в разработке", "Информация", 
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            PanelWelcome.Visibility = Visibility.Collapsed;
+            MainFrame.Visibility = Visibility.Visible;
+            MainFrame.Navigate(new ReportsPage());
         }
 
         /// <summary>
@@ -187,8 +191,9 @@ namespace Citizen_Benefits_Management_System
         /// </summary>
         private void BtnUsers_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел 'Пользователи' находится в разработке", "Информация", 
-                MessageBoxButton.OK, MessageBoxImage.Information);
+            PanelWelcome.Visibility = Visibility.Collapsed;
+            MainFrame.Visibility = Visibility.Visible;
+            MainFrame.Navigate(new UsersPage());
         }
     }
 }

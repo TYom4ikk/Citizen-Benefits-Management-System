@@ -1,0 +1,122 @@
+<Window x:Class="Citizen_Benefits_Management_System.View.UserEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Citizen_Benefits_Management_System.View"
+        mc:Ignorable="d"
+        Title="Редактирование пользователя" 
+        Height="550" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{StaticResource BackgroundColor}">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" 
+                   x:Name="TxtTitle"
+                   Text="Добавление пользователя" 
+                   Style="{StaticResource HeaderText}"
+                   Margin="0,0,0,20"/>
+
+        <!-- Форма -->
+        <Border Grid.Row="1" 
+                Background="White" 
+                CornerRadius="8" 
+                Padding="20">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <!-- Логин -->
+                    <TextBlock Text="Логин *" 
+                              Style="{StaticResource LabelText}"/>
+                    <TextBox x:Name="TxtUsername" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="50"
+                            Margin="0,5,0,15"/>
+
+                    <!-- Пароль -->
+                    <TextBlock x:Name="TxtPasswordLabel"
+                              Text="Пароль *" 
+                              Style="{StaticResource LabelText}"/>
+                    <PasswordBox x:Name="TxtPassword" 
+                                Style="{StaticResource ModernPasswordBox}"
+                                MaxLength="100"
+                                Margin="0,5,0,15"/>
+
+                    <!-- Фамилия -->
+                    <TextBlock Text="Фамилия *" 
+                              Style="{StaticResource LabelText}"/>
+                    <TextBox x:Name="TxtLastName" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="50"
+                            Margin="0,5,0,15"/>
+
+                    <!-- Имя -->
+                    <TextBlock Text="Имя *" 
+                              Style="{StaticResource LabelText}"/>
+                    <TextBox x:Name="TxtFirstName" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="50"
+                            Margin="0,5,0,15"/>
+
+                    <!-- Отчество -->
+                    <TextBlock Text="Отчество" 
+                              Style="{StaticResource LabelText}"/>
+                    <TextBox x:Name="TxtMiddleName" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="50"
+                            Margin="0,5,0,15"/>
+
+                    <!-- Email -->
+                    <TextBlock Text="Email" 
+                              Style="{StaticResource LabelText}"/>
+                    <TextBox x:Name="TxtEmail" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="100"
+                            Margin="0,5,0,15"/>
+
+                    <!-- Телефон -->
+                    <TextBlock Text="Телефон" 
+                              Style="{StaticResource LabelText}"/>
+                    <TextBox x:Name="TxtPhone" 
+                            Style="{StaticResource ModernTextBox}"
+                            MaxLength="20"
+                            Margin="0,5,0,15"/>
+
+                    <!-- Роль -->
+                    <TextBlock Text="Роль *" 
+                              Style="{StaticResource LabelText}"/>
+                    <ComboBox x:Name="CmbRole" 
+                             Style="{StaticResource ModernComboBox}"
+                             Margin="0,5,0,15"/>
+
+                    <TextBlock Text="* - обязательные поля" 
+                              FontSize="12"
+                              Foreground="{StaticResource TextSecondaryColor}"
+                              FontStyle="Italic"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="2" 
+                   Orientation="Horizontal" 
+                   HorizontalAlignment="Right"
+                   Margin="0,20,0,0">
+            <Button Content="Сохранить" 
+                   Style="{StaticResource PrimaryButton}"
+                   Click="BtnSave_Click"
+                   Width="120"
+                   Margin="0,0,10,0"/>
+            <Button Content="Отмена" 
+                   Style="{StaticResource SecondaryButton}"
+                   Click="BtnCancel_Click"
+                   Width="120"/>
+        </StackPanel>
+    </Grid>
+</Window>

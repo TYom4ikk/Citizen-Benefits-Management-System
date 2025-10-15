@@ -30,3 +30,14 @@ C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Manag
 C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\BenefitEditWindow.baml
 C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizenBenefitsWindow.g.cs
 C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\BenefitEditWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\Citizen Benefits Management System.exe.config
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\BenefitCategoriesPage.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\BenefitCategoryEditWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CertificateEditWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CertificateViewWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CertificatesPage.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\EventLogPage.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\ReportsPage.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\UserEditWindow.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\UsersPage.g.cs
+C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\obj\Debug\View\CitizenSelectWindow.g.cs

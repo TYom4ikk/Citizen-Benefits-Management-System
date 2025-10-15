@@ -1,0 +1,162 @@
+<Page x:Class="Citizen_Benefits_Management_System.View.CertificatesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Citizen_Benefits_Management_System.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="Справки"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" 
+                   Text="Регистрация справок" 
+                   Style="{StaticResource HeaderText}"
+                   Margin="0,0,0,20"/>
+
+        <!-- Панель поиска и фильтрации -->
+        <Border Grid.Row="1" 
+                Background="{StaticResource BackgroundColor}" 
+                Padding="15" 
+                CornerRadius="8"
+                Margin="0,0,0,15">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Первая строка: Поиск и кнопка добавления -->
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock Text="Поиск по ФИО:" 
+                                  VerticalAlignment="Center" 
+                                  Margin="0,0,10,0"/>
+                        <TextBox x:Name="TxtSearch" 
+                                Width="300" 
+                                Style="{StaticResource ModernTextBox}"
+                                TextChanged="TxtSearch_TextChanged"/>
+                    </StackPanel>
+
+                    <Button Grid.Column="1" 
+                           Content="+ Зарегистрировать справку" 
+                           Style="{StaticResource PrimaryButton}"
+                           Click="BtnAddCertificate_Click"
+                           Padding="15,8"/>
+                </Grid>
+
+                <!-- Вторая строка: Фильтры -->
+                <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock Text="Тип справки:" 
+                              VerticalAlignment="Center" 
+                              Margin="0,0,10,0"/>
+                    <ComboBox x:Name="CmbCertificateType" 
+                             Width="200" 
+                             Style="{StaticResource ModernComboBox}"
+                             SelectionChanged="CmbCertificateType_SelectionChanged"/>
+
+                    <TextBlock Text="Период с:" 
+                              VerticalAlignment="Center" 
+                              Margin="20,0,10,0"/>
+                    <DatePicker x:Name="DpStartDate" 
+                               Width="150"
+                               SelectedDateChanged="DateFilter_Changed"/>
+
+                    <TextBlock Text="по:" 
+                              VerticalAlignment="Center" 
+                              Margin="10,0,10,0"/>
+                    <DatePicker x:Name="DpEndDate" 
+                               Width="150"
+                               SelectedDateChanged="DateFilter_Changed"/>
+
+                    <Button Content="Очистить фильтры" 
+                           Style="{StaticResource SecondaryButton}"
+                           Click="BtnClearFilters_Click"
+                           Margin="20,0,0,0"
+                           Padding="15,8"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Таблица справок -->
+        <DataGrid Grid.Row="2" 
+                 x:Name="DgCertificates"
+                 Style="{StaticResource ModernDataGrid}"
+                 AutoGenerateColumns="False"
+                 IsReadOnly="True"
+                 SelectionMode="Single"
+                 CanUserAddRows="False"
+                 CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" 
+                                   Binding="{Binding CertificateID}" 
+                                   Width="60"/>
+                <DataGridTextColumn Header="ФИО гражданина" 
+                                   Binding="{Binding CitizenFullName}" 
+                                   Width="*"/>
+                <DataGridTextColumn Header="Тип справки" 
+                                   Binding="{Binding CertificateType}" 
+                                   Width="200"/>
+                <DataGridTextColumn Header="Дата выдачи" 
+                                   Binding="{Binding IssueDate, StringFormat='dd.MM.yyyy'}" 
+                                   Width="120"/>
+                <DataGridTextColumn Header="Выдал" 
+                                   Binding="{Binding IssuedByUser}" 
+                                   Width="150"/>
+                <DataGridTemplateColumn Header="Действия" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Просмотр" 
+                                       Style="{StaticResource SecondaryButton}"
+                                       Click="BtnView_Click"
+                                       Tag="{Binding CertificateID}"
+                                       Margin="0,0,5,0"
+                                       Padding="10,5"/>
+                                <Button Content="Удалить" 
+                                       Style="{StaticResource SecondaryButton}"
+                                       Click="BtnDelete_Click"
+                                       Tag="{Binding CertificateID}"
+                                       Padding="10,5"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Статистика -->
+        <Border Grid.Row="3" 
+                Background="{StaticResource BackgroundColor}" 
+                Padding="15" 
+                CornerRadius="8"
+                Margin="0,15,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Всего справок: " 
+                          FontWeight="Bold"/>
+                <TextBlock x:Name="TxtTotalCertificates" 
+                          Text="0"
+                          Margin="5,0,20,0"/>
+                <TextBlock Text="За выбранный период: " 
+                          FontWeight="Bold"/>
+                <TextBlock x:Name="TxtFilteredCertificates" 
+                          Text="0"
+                          Margin="5,0,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

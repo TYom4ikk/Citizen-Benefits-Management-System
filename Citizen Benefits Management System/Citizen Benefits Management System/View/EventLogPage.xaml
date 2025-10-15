@@ -1,0 +1,143 @@
+<Page x:Class="Citizen_Benefits_Management_System.View.EventLogPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Citizen_Benefits_Management_System.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="Журнал событий"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" 
+                   Text="Журнал событий" 
+                   Style="{StaticResource HeaderText}"
+                   Margin="0,0,0,20"/>
+
+        <!-- Панель фильтрации -->
+        <Border Grid.Row="1" 
+                Background="{StaticResource BackgroundColor}" 
+                Padding="15" 
+                CornerRadius="8"
+                Margin="0,0,0,15">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Первая строка: Пользователь и тип события -->
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <TextBlock Text="Пользователь:" 
+                              VerticalAlignment="Center" 
+                              Margin="0,0,10,0"/>
+                    <ComboBox x:Name="CmbUser" 
+                             Width="250" 
+                             Style="{StaticResource ModernComboBox}"
+                             SelectionChanged="Filter_Changed"/>
+
+                    <TextBlock Text="Тип события:" 
+                              VerticalAlignment="Center" 
+                              Margin="20,0,10,0"/>
+                    <ComboBox x:Name="CmbEventType" 
+                             Width="250" 
+                             Style="{StaticResource ModernComboBox}"
+                             SelectionChanged="Filter_Changed"/>
+                </StackPanel>
+
+                <!-- Вторая строка: Период и кнопки -->
+                <Grid Grid.Row="1" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock Text="Период с:" 
+                                  VerticalAlignment="Center" 
+                                  Margin="0,0,10,0"/>
+                        <DatePicker x:Name="DpStartDate" 
+                                   Width="150"
+                                   SelectedDateChanged="Filter_Changed"/>
+
+                        <TextBlock Text="по:" 
+                                  VerticalAlignment="Center" 
+                                  Margin="10,0,10,0"/>
+                        <DatePicker x:Name="DpEndDate" 
+                                   Width="150"
+                                   SelectedDateChanged="Filter_Changed"/>
+
+                        <Button Content="Очистить фильтры" 
+                               Style="{StaticResource SecondaryButton}"
+                               Click="BtnClearFilters_Click"
+                               Margin="20,0,0,0"
+                               Padding="15,8"/>
+                    </StackPanel>
+
+                    <Button Grid.Column="1"
+                           Content="Экспорт в Excel" 
+                           Style="{StaticResource PrimaryButton}"
+                           Click="BtnExportToExcel_Click"
+                           Padding="15,8"/>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- Таблица событий -->
+        <DataGrid Grid.Row="2" 
+                 x:Name="DgEventLog"
+                 Style="{StaticResource ModernDataGrid}"
+                 AutoGenerateColumns="False"
+                 IsReadOnly="True"
+                 SelectionMode="Single"
+                 CanUserAddRows="False"
+                 CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" 
+                                   Binding="{Binding EventID}" 
+                                   Width="60"/>
+                <DataGridTextColumn Header="Дата и время" 
+                                   Binding="{Binding EventDate, StringFormat='dd.MM.yyyy HH:mm:ss'}" 
+                                   Width="150"/>
+                <DataGridTextColumn Header="Пользователь" 
+                                   Binding="{Binding UserFullName}" 
+                                   Width="200"/>
+                <DataGridTextColumn Header="Тип события" 
+                                   Binding="{Binding EventType}" 
+                                   Width="200"/>
+                <DataGridTextColumn Header="Описание" 
+                                   Binding="{Binding EventDescription}" 
+                                   Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Статистика -->
+        <Border Grid.Row="3" 
+                Background="{StaticResource BackgroundColor}" 
+                Padding="15" 
+                CornerRadius="8"
+                Margin="0,15,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Всего записей: " 
+                          FontWeight="Bold"/>
+                <TextBlock x:Name="TxtTotalEvents" 
+                          Text="0"
+                          Margin="5,0,20,0"/>
+                <TextBlock Text="Отфильтровано: " 
+                          FontWeight="Bold"/>
+                <TextBlock x:Name="TxtFilteredEvents" 
+                          Text="0"
+                          Margin="5,0,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

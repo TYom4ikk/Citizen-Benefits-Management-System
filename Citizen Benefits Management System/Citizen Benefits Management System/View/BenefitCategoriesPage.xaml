@@ -1,0 +1,125 @@
+<Page x:Class="Citizen_Benefits_Management_System.View.BenefitCategoriesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Citizen_Benefits_Management_System.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="Категории льгот"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" 
+                   Text="Категории льгот" 
+                   Style="{StaticResource HeaderText}"
+                   Margin="0,0,0,20"/>
+
+        <!-- Панель поиска и фильтрации -->
+        <Border Grid.Row="1" 
+                Background="{StaticResource BackgroundColor}" 
+                Padding="15" 
+                CornerRadius="8"
+                Margin="0,0,0,15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                    <TextBlock Text="Поиск:" 
+                              VerticalAlignment="Center" 
+                              Margin="0,0,10,0"/>
+                    <TextBox x:Name="TxtSearch" 
+                            Width="300" 
+                            Style="{StaticResource ModernTextBox}"
+                            TextChanged="TxtSearch_TextChanged"/>
+                    <Button Content="Очистить" 
+                           Style="{StaticResource SecondaryButton}"
+                           Click="BtnClearSearch_Click"
+                           Margin="10,0,0,0"
+                           Padding="15,8"/>
+                </StackPanel>
+
+                <Button Grid.Column="1" 
+                       Content="+ Добавить категорию" 
+                       Style="{StaticResource PrimaryButton}"
+                       Click="BtnAddCategory_Click"
+                       Padding="15,8"/>
+            </Grid>
+        </Border>
+
+        <!-- Таблица категорий -->
+        <DataGrid Grid.Row="2" 
+                 x:Name="DgCategories"
+                 Style="{StaticResource ModernDataGrid}"
+                 AutoGenerateColumns="False"
+                 IsReadOnly="True"
+                 SelectionMode="Single"
+                 CanUserAddRows="False"
+                 CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" 
+                                   Binding="{Binding CategoryID}" 
+                                   Width="80"/>
+                <DataGridTextColumn Header="Название категории" 
+                                   Binding="{Binding CategoryName}" 
+                                   Width="*"/>
+                <DataGridTextColumn Header="Описание" 
+                                   Binding="{Binding Description}" 
+                                   Width="2*"/>
+                <DataGridTextColumn Header="Количество граждан" 
+                                   Binding="{Binding CitizenCount}" 
+                                   Width="150"/>
+                <DataGridTemplateColumn Header="Действия" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Редактировать" 
+                                       Style="{StaticResource SecondaryButton}"
+                                       Click="BtnEdit_Click"
+                                       Tag="{Binding CategoryID}"
+                                       Margin="0,0,5,0"
+                                       Padding="10,5"/>
+                                <Button Content="Удалить" 
+                                       Style="{StaticResource SecondaryButton}"
+                                       Click="BtnDelete_Click"
+                                       Tag="{Binding CategoryID}"
+                                       Padding="10,5"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Статистика -->
+        <Border Grid.Row="3" 
+                Background="{StaticResource BackgroundColor}" 
+                Padding="15" 
+                CornerRadius="8"
+                Margin="0,15,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Всего категорий: " 
+                          FontWeight="Bold"/>
+                <TextBlock x:Name="TxtTotalCategories" 
+                          Text="0"
+                          Margin="5,0,20,0"/>
+                <TextBlock Text="Всего льготников: " 
+                          FontWeight="Bold"/>
+                <TextBlock x:Name="TxtTotalCitizens" 
+                          Text="0"
+                          Margin="5,0,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

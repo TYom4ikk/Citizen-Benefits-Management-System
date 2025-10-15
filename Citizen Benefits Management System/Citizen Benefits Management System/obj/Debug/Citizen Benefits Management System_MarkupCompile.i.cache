@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Admin\Desktop\Citizen-Benefits-Management-System\Citizen Benefits Management System\Citizen Benefits Management System\App.xaml
-7-1206683647
+171598689419
 2-95638413
-34-1842530901
+461019120110
 18-911429273
-Assets\Styles.xaml;MainWindow.xaml;View\LoginWindow.xaml;View\CitizensListPage.xaml;View\CitizenEditWindow.xaml;View\CitizenBenefitsWindow.xaml;View\BenefitEditWindow.xaml;
+Assets\Styles.xaml;MainWindow.xaml;View\LoginWindow.xaml;View\CitizensListPage.xaml;View\CitizenEditWindow.xaml;View\CitizenBenefitsWindow.xaml;View\BenefitEditWindow.xaml;View\BenefitCategoriesPage.xaml;View\BenefitCategoryEditWindow.xaml;View\CertificateEditWindow.xaml;View\CertificateViewWindow.xaml;View\CertificatesPage.xaml;View\EventLogPage.xaml;View\ReportsPage.xaml;View\UserEditWindow.xaml;View\UsersPage.xaml;View\CitizenSelectWindow.xaml;
 
 False
 
