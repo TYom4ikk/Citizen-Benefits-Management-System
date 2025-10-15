@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|c:\\users\\admin\\desktop\\citizen-benefits-management-system\\citizen benefits management system\\citizen benefits management system\\view\\reportspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|c:\\users\\admin\\desktop\\citizen-benefits-management-system\\citizen benefits management system\\citizen benefits management system\\view\\reportspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|solutionrelative:citizen benefits management system\\view\\reportspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\citizen benefits management system\\view\\reportspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|solutionrelative:citizen benefits management system\\view\\reportspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|c:\\users\\admin\\desktop\\citizen-benefits-management-system\\citizen benefits management system\\citizen benefits management system\\classes\\reportsexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\citizen benefits management system\\classes\\reportsexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|solutionrelative:citizen benefits management system\\classes\\reportsexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|c:\\users\\admin\\desktop\\citizen-benefits-management-system\\citizen benefits management system\\citizen benefits management system\\view\\citizenselectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\citizen benefits management system\\view\\citizenselectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30762D40-4109-4F52-9EF8-245535241625}|Citizen Benefits Management System\\Citizen Benefits Management System.csproj|solutionrelative:citizen benefits management system\\view\\citizenselectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -71,31 +75,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ReportsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\ReportsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Citizen Benefits Management System\\View\\ReportsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\ReportsPage.xaml.cs",
+              "RelativeToolTip": "Citizen Benefits Management System\\View\\ReportsPage.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T21:40:45.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ReportsPage.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\ReportsPage.xaml",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\View\\ReportsPage.xaml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\ReportsPage.xaml",
               "RelativeToolTip": "Citizen Benefits Management System\\View\\ReportsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-15T21:30:36.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReportsExporter.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Classes\\ReportsExporter.cs",
-              "RelativeDocumentMoniker": "Citizen Benefits Management System\\Classes\\ReportsExporter.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Classes\\ReportsExporter.cs*",
-              "RelativeToolTip": "Citizen Benefits Management System\\Classes\\ReportsExporter.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwG8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T21:28:08.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T21:30:36.958Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ReportsExporter.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Classes\\ReportsExporter.cs",
+              "RelativeDocumentMoniker": "Citizen Benefits Management System\\Classes\\ReportsExporter.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Classes\\ReportsExporter.cs",
+              "RelativeToolTip": "Citizen Benefits Management System\\Classes\\ReportsExporter.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T21:28:08.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CitizenSelectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\CitizenSelectWindow.xaml.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\View\\CitizenSelectWindow.xaml.cs",
@@ -103,12 +118,11 @@
               "RelativeToolTip": "Citizen Benefits Management System\\View\\CitizenSelectWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T19:19:55.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T19:19:55.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserEditWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\UserEditWindow.xaml.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\View\\UserEditWindow.xaml.cs",
@@ -116,12 +130,11 @@
               "RelativeToolTip": "Citizen Benefits Management System\\View\\UserEditWindow.xaml.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAMwGUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T19:19:40.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T19:19:40.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Core.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Model\\Core.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\Model\\Core.cs",
@@ -129,12 +142,11 @@
               "RelativeToolTip": "Citizen Benefits Management System\\Model\\Core.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAIAwwA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T19:17:05.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T19:17:05.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CertificatesController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Classes\\Controllers\\CertificatesController.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\Classes\\Controllers\\CertificatesController.cs",
@@ -142,12 +154,11 @@
               "RelativeToolTip": "Citizen Benefits Management System\\Classes\\Controllers\\CertificatesController.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAnwHEAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T19:15:47.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T19:15:47.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\App.config",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\App.config",
@@ -155,12 +166,11 @@
               "RelativeToolTip": "Citizen Benefits Management System\\App.config",
               "ViewState": "AgIAAAgAAAAAAAAAAAAqwA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-10T19:13:13.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T19:13:13.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BenefitEditWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\BenefitEditWindow.xaml.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\View\\BenefitEditWindow.xaml.cs",
@@ -168,12 +178,11 @@
               "RelativeToolTip": "Citizen Benefits Management System\\View\\BenefitEditWindow.xaml.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAmwFwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T22:14:14.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T22:14:14.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CitizenBenefitsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Classes\\Controllers\\CitizenBenefitsController.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\Classes\\Controllers\\CitizenBenefitsController.cs",
@@ -181,36 +190,33 @@
               "RelativeToolTip": "Citizen Benefits Management System\\Classes\\Controllers\\CitizenBenefitsController.cs",
               "ViewState": "AgIAALAAAAAAAAAAAAAowLoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T22:08:46.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T22:08:46.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CitizenEditWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\CitizenEditWindow.xaml",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\View\\CitizenEditWindow.xaml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\View\\CitizenEditWindow.xaml",
               "RelativeToolTip": "Citizen Benefits Management System\\View\\CitizenEditWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-09T21:51:02.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T21:51:02.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Model.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Model\\Model.edmx",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\Model\\Model.edmx",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\Model\\Model.edmx [Diagram1]",
               "RelativeToolTip": "Citizen Benefits Management System\\Model\\Model.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-10-09T20:41:03.716Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2025-10-09T20:41:03.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\CitizenBenefitsManagmentSystemTests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "CitizenBenefitsManagmentSystemTests\\UnitTest1.cs",
@@ -218,24 +224,22 @@
               "RelativeToolTip": "CitizenBenefitsManagmentSystemTests\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T20:36:53.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T20:36:53.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\MainWindow.xaml",
               "RelativeToolTip": "Citizen Benefits Management System\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-05T23:07:01.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T23:07:01.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Citizen-Benefits-Management-System\\Citizen Benefits Management System\\Citizen Benefits Management System\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Citizen Benefits Management System\\MainWindow.xaml.cs",
@@ -243,8 +247,7 @@
               "RelativeToolTip": "Citizen Benefits Management System\\MainWindow.xaml.cs",
               "ViewState": "AgIAALoAAAAAAAAAAAAMwMAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T23:06:59.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T23:06:59.364Z"
             }
           ]
         }

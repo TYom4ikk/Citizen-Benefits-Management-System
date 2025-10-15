@@ -47,7 +47,7 @@ namespace Citizen_Benefits_Management_System.View
         /// </summary>
         private void LoadBenefitCategories()
         {
-            var categories = _categoriesController.GetAllCategories();
+            var categories = _categoriesController.GetAll();
             var categoryList = categories.Select(c => new { c.CategoryID, c.CategoryName }).ToList();
             categoryList.Insert(0, new { CategoryID = 0, CategoryName = "Все категории" });
             
@@ -62,7 +62,7 @@ namespace Citizen_Benefits_Management_System.View
         /// </summary>
         private void LoadRegions()
         {
-            var regions = _regionsController.GetAllRegions();
+            var regions = _regionsController.GetAll();
             var regionList = regions.Select(r => new { r.RegionID, r.RegionName }).ToList();
             regionList.Insert(0, new { RegionID = 0, RegionName = "Все регионы" });
             
@@ -79,7 +79,7 @@ namespace Citizen_Benefits_Management_System.View
         {
             try
             {
-                var allCitizens = _citizensController.GetAllCitizens();
+                var allCitizens = _citizensController.GetAll();
                 TxtTotalCitizens.Text = allCitizens.Count.ToString();
 
                 var beneficiariesCount = allCitizens.Count(c => c.CitizenBenefits.Any(cb => cb.IsActive));

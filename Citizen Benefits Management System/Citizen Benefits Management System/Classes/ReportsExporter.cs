@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
+using Citizen_Benefits_Management_System.Model;
 
 namespace CitizenBenefitsManagementSystem.Classes
 {
@@ -15,7 +16,7 @@ namespace CitizenBenefitsManagementSystem.Classes
         /// </summary>
         /// <param name="events">Список EventLog моделей</param>
         /// <param name="filePath">Путь для сохранения .xlsx</param>
-        public void ExportEventLogToExcel(IEnumerable<Model.EventLog> events, string filePath)
+        public void ExportEventLogToExcel(IEnumerable<EventLog> events, string filePath)
         {
             if (events == null) throw new ArgumentNullException(nameof(events));
             if (string.IsNullOrWhiteSpace(filePath)) throw new ArgumentNullException(nameof(filePath));
