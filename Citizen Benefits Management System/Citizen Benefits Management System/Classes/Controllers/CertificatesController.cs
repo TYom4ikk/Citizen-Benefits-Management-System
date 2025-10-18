@@ -111,8 +111,8 @@ namespace Citizen_Benefits_Management_System.Classes.Controllers
                 {
                     existingCertificate.CitizenID = certificate.CitizenID;
                     existingCertificate.CertificateType = certificate.CertificateType;
-                    existingCertificate.IssueDate = certificate.IssueDate;
-                    existingCertificate.IssuedByUserID = certificate.IssuedByUserID;
+                    existingCertificate.IssueDate = certificate.IssueDate
+                    existingCertificate.IssuedBy = certificate.IssuedBy;
                     existingCertificate.Notes = certificate.Notes;
                     
                     context.SaveChanges();

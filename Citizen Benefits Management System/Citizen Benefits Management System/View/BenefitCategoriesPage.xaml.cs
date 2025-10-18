@@ -47,7 +47,7 @@ namespace Citizen_Benefits_Management_System.View
                     CategoryID = c.CategoryID,
                     CategoryName = c.CategoryName,
                     Description = c.Description,
-                    CitizenCount = c.CitizenBenefits.Count(cb => cb.IsActive)
+                    CitizenCount = c.CitizenBenefits.Count(cb => cb.EndDate == null || cb.EndDate > DateTime.Now)
                 }).ToList();
 
                 DgCategories.ItemsSource = _allCategories;
@@ -159,7 +159,7 @@ namespace Citizen_Benefits_Management_System.View
                 if (category != null)
                 {
                     // Проверка наличия связанных льгот
-                    int citizenCount = category.CitizenBenefits.Count(cb => cb.IsActive);
+                    int citizenCount = category.CitizenBenefits.Count(cb => cb.EndDate == null || cb.EndDate > DateTime.Now);
                     if (citizenCount > 0)
                     {
                         MessageBox.Show($"Невозможно удалить категорию '{category.CategoryName}', " +

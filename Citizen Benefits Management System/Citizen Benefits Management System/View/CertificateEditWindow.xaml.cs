@@ -107,7 +107,7 @@ namespace Citizen_Benefits_Management_System.View
                     CitizenID = _selectedCitizenId.Value,
                     CertificateType = CmbCertificateType.SelectedItem.ToString(),
                     IssueDate = DpIssueDate.SelectedDate.Value,
-                    IssuedByUserID = SessionManager.CurrentUser.UserID,
+                    IssuedBy = SessionManager.CurrentUser.UserID,
                     Notes = string.IsNullOrWhiteSpace(TxtNotes.Text) ? null : TxtNotes.Text.Trim()
                 };
 
