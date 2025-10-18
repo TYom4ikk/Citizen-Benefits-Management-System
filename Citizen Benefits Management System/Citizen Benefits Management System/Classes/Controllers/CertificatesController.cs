@@ -110,8 +110,8 @@ namespace Citizen_Benefits_Management_System.Classes.Controllers
                 if (existingCertificate != null)
                 {
                     existingCertificate.CitizenID = certificate.CitizenID;
-                    existingCertificate.CertificateType = certificate.CertificateType;
-                    existingCertificate.IssueDate = certificate.IssueDate
+                    existingCertificate.CategoryID= certificate.CategoryID;
+                    existingCertificate.IssueDate = certificate.IssueDate;
                     existingCertificate.IssuedBy = certificate.IssuedBy;
                     existingCertificate.Notes = certificate.Notes;
                     
